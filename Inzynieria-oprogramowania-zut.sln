@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "app", "app\app.csproj", "{5BCA07F2-C269-4E00-AEA7-7B70CE4C255E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxiRideAPI", "TaxiRideAPI\TaxiRideAPI.csproj", "{5BCA07F2-C269-4E00-AEA7-7B70CE4C255E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", ".", "{8243066E-3825-4E39-919C-D5714D05D229}"
 	ProjectSection(SolutionItems) = preProject

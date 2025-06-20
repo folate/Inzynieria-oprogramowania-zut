@@ -1,0 +1,63 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles below */
+
+/* Uber-like dark mode base styles */
+html.dark {
+  background-color: #18181c;
+  color-scheme: dark;
+}
+body.dark, .dark {
+  background-color: #18181c;
+  color: #f3f4f6;
+}
+
+/* Card styles */
+.uber-card, .dark .uber-card {
+  @apply rounded-2xl shadow-xl border-0 bg-[#232329] text-white p-6;
+  transition: box-shadow 0.2s, background 0.2s;
+}
+
+/* Input styles */
+.uber-input, .dark .uber-input {
+  @apply w-full px-4 py-3 rounded-lg border border-gray-600 bg-[#2a2a2a] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200;
+}
+
+.uber-input:focus {
+  @apply bg-[#323232] border-blue-500;
+}
+
+/* Floating panel */
+.uber-floating {
+  @apply fixed bottom-0 left-0 right-0 z-50 bg-[#232329] rounded-t-2xl shadow-2xl p-6 border-t border-gray-700;
+}
+
+/* Sticky bottom bar */
+.uber-bottom-bar {
+  @apply fixed bottom-0 left-0 right-0 z-40 bg-[#18181c] border-t border-gray-700 flex items-center justify-between px-6 py-4;
+}
+
+/* Uber button */
+.uber-btn, .dark .uber-btn {
+  @apply bg-[#1a1a1a] text-white rounded-full px-6 py-3 text-lg font-semibold shadow hover:bg-[#232329] transition;
+}
+
+/* Skeleton loader */
+.uber-skeleton {
+  @apply animate-pulse bg-gray-700 rounded-lg;
+}
+
+/* Animations */
+.uber-fadein {
+  animation: fadeInUber 0.4s cubic-bezier(0.4,0,0.2,1);
+}
+@keyframes fadeInUber {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: none; }
+}
